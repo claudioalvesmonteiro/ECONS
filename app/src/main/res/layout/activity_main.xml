@@ -9,47 +9,61 @@
 
     <TextView
         android:id="@+id/txtHello"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
+        android:layout_width="182dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="112dp"
         android:layout_marginTop="8dp"
-        android:layout_marginRight="192dp"
-        android:textColor="#0CAADC"
+        android:layout_marginRight="172dp"
+        android:fontFamily="casual"
         android:text="@string/hello"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#0CAADC"
+        android:textSize="50sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/inputB"
-        app:layout_constraintVertical_bias="0.133" />
+        app:layout_constraintVertical_bias="0.177" />
 
 
     <EditText
         android:id="@+id/inputA"
         android:layout_width="274dp"
         android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="8dp"
         android:layout_weight="1"
         android:ems="10"
+        android:inputType="number"
         android:textColor="#0CAADC"
-        android:inputType="textPersonName"
-        tools:layout_editor_absoluteX="68dp"
-        tools:layout_editor_absoluteY="58dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.462"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.08" />
 
 
     <EditText
         android:id="@+id/inputB"
-        android:layout_width="271dp"
-        android:layout_height="51dp"
+        android:layout_width="278dp"
+        android:layout_height="58dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:layout_weight="1"
         android:ems="10"
-        android:textColor="#0CAADC"
         android:inputType="number"
+        android:textColor="#0CAADC"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintHorizontal_bias="0.538"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/inputA"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.025" />
 
     <Button
         android:id="@+id/buttonDividir"
@@ -57,11 +71,12 @@
         android:layout_height="87dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
         android:layout_marginBottom="156dp"
         android:background="@android:color/transparent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/txtHello"
-        app:layout_constraintHorizontal_bias="0.84"
+        app:layout_constraintEnd_toStartOf="@+id/buttonSoma"
+        app:layout_constraintHorizontal_bias="0.672"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/inputB"
         app:layout_constraintVertical_bias="0.962" />
@@ -70,25 +85,49 @@
         android:id="@+id/buttonSoma"
         android:layout_width="121dp"
         android:layout_height="109dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
         android:background="@android:color/transparent"
-        tools:layout_editor_absoluteX="229dp"
-        tools:layout_editor_absoluteY="394dp" />
+        app:layout_constraintBottom_toTopOf="@+id/buttonMultiplica"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.802"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.948" />
 
     <Button
         android:id="@+id/buttonSubtracao"
-        android:layout_width="136dp"
-        android:layout_height="78dp"
+        android:layout_width="132dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
         android:background="@android:color/transparent"
-        tools:layout_editor_absoluteX="59dp"
-        tools:layout_editor_absoluteY="533dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonMultiplica"
+        app:layout_constraintHorizontal_bias="0.551"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonDividir"
+        app:layout_constraintVertical_bias="0.563" />
 
     <Button
-        android:id="@+id/button3"
-        android:layout_width="103dp"
-        android:layout_height="100dp"
+        android:id="@+id/buttonMultiplica"
+        android:layout_width="89dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
         android:background="@android:color/transparent"
-        tools:layout_editor_absoluteX="237dp"
-        tools:layout_editor_absoluteY="519dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.767"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.951" />
 
 
 </android.support.constraint.ConstraintLayout>

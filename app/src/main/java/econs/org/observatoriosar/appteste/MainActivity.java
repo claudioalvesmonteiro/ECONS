@@ -24,19 +24,16 @@ public class MainActivity extends AppCompatActivity {
         // getResources acessa os arquivos e getString os arquivos tipo string
         // String test = getResources().getString(R.string.hello);
 
-        //
-        final TextView textView = findViewById(R.id.txtHello);
-
-        //
+        // acessar espaco de memoria
         final EditText editTextA = findViewById(R.id.inputA);
         final EditText editTextB = findViewById(R.id.inputB);
-
+        final TextView textView = findViewById(R.id.txtHello);
 
         // objeto listener 'escutando alguma coisa pra executar determinada acao'
         // evento de clique
 
-        Button button = findViewById(R.id.buttonDividir);
-        button.setOnClickListener(new View.OnClickListener() {
+        Button buttonA = findViewById(R.id.buttonSoma);
+        buttonA.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Integer obA = Integer.valueOf(editTextA.getEditableText().toString());
@@ -49,7 +46,47 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        Button buttonB = findViewById(R.id.buttonDividir);
+        buttonB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Double obA = Double.valueOf(editTextA.getEditableText().toString());
+                Double obB = Double.valueOf(editTextB.getEditableText().toString());
 
+                Double resultado = obA / obB;
+
+                textView.setText(resultado.toString());
+
+            }
+        });
+
+        Button buttonC = findViewById(R.id.buttonSubtracao);
+        buttonC.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Integer obA = Integer.valueOf(editTextA.getEditableText().toString());
+                Integer obB = Integer.valueOf(editTextB.getEditableText().toString());
+
+                Integer resultado = obA - obB;
+
+                textView.setText(resultado.toString());
+
+            }
+        });
+
+        Button buttonD = findViewById(R.id.buttonMultiplica);
+        buttonD.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Integer obA = Integer.valueOf(editTextA.getEditableText().toString());
+                Integer obB = Integer.valueOf(editTextB.getEditableText().toString());
+
+                Integer resultado = obA * obB;
+
+                textView.setText(resultado.toString());
+
+            }
+        });
 
     }
 
