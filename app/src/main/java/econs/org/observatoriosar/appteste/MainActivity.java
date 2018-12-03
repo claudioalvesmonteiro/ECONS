@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         // objeto listener 'escutando alguma coisa pra executar determinada acao'
         // evento de clique
 
-        Button button = findViewById(R.id.buttonOK);
+        Button button = findViewById(R.id.buttonDividir);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
