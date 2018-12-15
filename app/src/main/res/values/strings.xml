@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Calcooladora</string>
-    <string name="hello">Olá!</string>
+    <string name="hello">Execute uma operação entre dois números :)</string>
     <string name="ok">OK</string>
     <string name="title_activity_home">Sign in</string>
     <!-- Strings related to login -->
@@ -15,4 +15,5 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
+    <string name="title_activity_main2">Main2Activity</string>
 </resources>
